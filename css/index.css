@@ -1,0 +1,61 @@
+.wrapper {
+  min-height: 100vh;
+  display: grid;
+  border-style: solid;
+  grid-template-columns: 200px auto auto 200px;
+  grid-template-rows: auto auto auto auto 100px;
+  grid-template-areas:
+    's k k a'
+    's k k a'
+    's c c a'
+    's c c a'
+    'm f f n';
+}
+
+.submenu {
+  grid-area: s;
+  background-color: yellow;
+  visibility: hidden;
+}
+
+.menu {
+  background-color: black;
+  grid-area: m;
+  color: white;
+  text-align: center;
+}
+
+.content {
+  background-color: white;
+  grid-area: c;
+}
+
+.nuclear {
+  background-color: yellow;
+  grid-area: n;
+}
+
+p {
+  text-align: center;
+}
+
+.profile {
+  background-color: orange;
+  grid-area: p;
+}
+
+.nuclearmenu {
+  visibility: hidden;
+  background-color: yellow;
+  grid-area: a;
+}
+
+.circle {
+  grid-area: c;
+}
+
+.firstdescription,
+.seconddescription,
+.thirddescription {
+  font-size: 14px;
+}
